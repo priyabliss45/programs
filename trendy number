@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    printf("Enter a number\n");
+    int n,x;
+    scanf("%d",&n);
+    if(n>=100&&n<=999)
+        {
+            x=n%100;
+            x=x/10;
+            if(x%3==0)
+                printf("It is a trendy number\n");
+            else
+                printf("It is not a trendy number\n");
+        }
+        else
+                printf("It is not a trendy number\n");
+        return 0;
+}
