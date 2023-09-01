@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,n,bus=0;
+    printf("Enter the number of bus and number of seats in each bus\n");
+    scanf("%d%d",&a,&b);
+    printf("Enter the number of ppl set\n");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+        
+    }
+    for(int j=0;j<n;j++)
+    {
+        int x=b-arr[j];
+        if(arr[j+1]<=x){
+            j=j+1;
+            
+        }
+        bus++;
+        
+            
+    }
+    printf("%d",bus);
+}
