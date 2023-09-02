@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int add(int arr[],int i)
+{
+    if(i==0)
+    return arr[i];
+    else
+    {
+        return arr[i]+add(arr,i-1);
+    }
+    
+ 
+}
+void main()
+{
+    printf("Enter the array size\n");
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the array elements\n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("%d",add(arr,n-1));
+}
